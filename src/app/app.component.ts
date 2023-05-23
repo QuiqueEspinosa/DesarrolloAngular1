@@ -25,14 +25,9 @@ export class AppComponent {
   }
    
  
-
-borrarElemento(elemento: string) {
-  const index = this.comentario.indexOf(elemento); // Obtener el índice del elemento en el arreglo
-
-  if (index !== -1) {
-    this.comentario.splice(index, 1); // Borrar el elemento utilizando el método splice()
-  }
+eliminarComentario(index: number) {
+  this.comentario.splice(index, 1);
 }
-    
+
    
 }

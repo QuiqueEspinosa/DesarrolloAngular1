@@ -22,13 +22,11 @@
     </div>
 
     <div class="comen grid-item">
-        <div class="comen-mensajes" *ngFor="let elemento of comentario">
+        <div class="comen-mensajes" *ngFor="let elemento of comentario;let i=index">
             <div class="elementocaja">
                 {{ elemento }}
-            </div>
-            <button>borrar</button>
-            <button>actualizar</button>
+               </div>
+        <div >
+            <button (click)="eliminarComentario(i)">Eliminar</button>
         </div>
-
     </div>
-</div>
